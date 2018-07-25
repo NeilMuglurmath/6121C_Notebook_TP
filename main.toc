@@ -1,5 +1,0 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {english}{}
-\contentsline {part}{I\hspace {1em}Introductory Information}{1}{part.1}
-\contentsline {part}{II\hspace {1em}Build Iterations}{3}{part.2}
-\contentsline {part}{III\hspace {1em}Appendices}{5}{part.3}
