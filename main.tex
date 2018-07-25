@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Purdue ACM SIGBots Engineering Notebook
+% LaTeX Template
+% Version 1.0 (02/12/2017)
+%
+%
+% Notes:
+% This file contains the setup for the document and the information for the notebook that will be consistent year to year.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------
+% Document Configuration
+%-----------------------------------------
+\documentclass[
+	12pt, %default document font size
+	english %sets the language as english
+	]
+	{SIGBotsEngineeringNotebook} %class file specifying document structure
+	
+	%-----------------------------------------
+	% Bibliography initialization
+	%-----------------------------------------
+	\usepackage[backend=biber,style=authoryear,sorting=nty]{biblatex}
+	% Insert your .bib file below
+	%\bibliography{./Starstruck}
+	\nocite{*} %needed to make sure that the file is actually loaded, do not remove
+	
+	%-----------------------------------------
+	% Margin Settings
+	%-----------------------------------------
+	\usepackage[
+		letterpaper,
+		portrait,
+		margin=1in,
+	    %showframe, %shows how the text block is set on the page, helping for adjusting margins
+	]
+	{geometry}
+	
+	%-----------------------------------------
+	% Document Information
+	%-----------------------------------------
+	\currentgame{VEX Turning Point} %Competition name, i.e. VEX Starstruck
+	\currentseason{2018-19} %The year of competition, i.e. 2016-17
+	\division{} %for all of you going to Worlds
+	
+	\teamname{The Pioneers}
+	\teamnumber{6121C}
+	
+	%-----------------------------------------
+	% Document Initialization
+	%-----------------------------------------
+	\begin{document}
+	
+	\frontmatter %Use Roman Numeral page numbering style for the pre-content pages
+	%-----------------------------------------
+	% Title Page
+	%-----------------------------------------
+	\begin{titlepage}
+	\begin{center}
+	
+	\textsc{\LARGE \teamname}\\[1cm]
+	\textsc{\Large Engineering Notebook}\\[0.5cm]
+	\hrule %horizontal line
+	\hfill \\[1.5cm] %provides the space between the line and title
+	{\huge
+	\bfseries
+	\currentgame\ (\currentseason)
+	}
+	\\[1.5cm]
+	%include a picture of your robot or team logo below
+	%\includegraphics[scale=.125]{BLRS}
+		\includegraphics[scale=.5]{CHSRoboticsGear.jpg}
+	\\[1cm]
+	\textsc{\Large \teamnumber}\\[0.5cm] %for non worlds competitions
+	%\textsc{\Large \teamname \division}\\[0.5cm] %uncomment for worlds to input division
+	
+	\vfill
+	\end{center}
+	\end{titlepage}
+	\afterpage{\blankpage}
+	
+	%-----------------------------------------
+	% Table of Contents
+	%-----------------------------------------
+	\clearpage %used to prevent tocloft package from pushing page ahead by one
+	\pagestyle{plain}
+	\tableofcontents
+	\clearpage
+	\listoffigures
+	
+	%-----------------------------------------
+	% Document Body
+	%-----------------------------------------
+	\mainmatter % Begin numeric (1,2,3...) page numbering
+	
+	%Introductory Information
+	\part{Introductory Information}
+	\pagestyle{Intro} %reformat header and footer
+	\begin{Introductory Material}
+	\introtrue %boolean to change section headings
+	
+	%Recommended intro material
+	%\include{IntroductoryMaterial/Introduction}
+	%\include{IntroductoryMaterial/GameRules}
+	%\include{IntroductoryMaterial/Strategy}
+	%\include{IntroductoryMaterial/TeamPerformance}
+	
+	\end{Introductory Material}
+	\introfalse
+	
+	%Iterations
+	\part{Build Iterations}
+	\pagestyle{Iterations} %begin Iteration style headers and footers
+	
+	%include Iteration chapters here
+	%\include{Iterations/Iteration1}
+	
+	%Appendices
+	\part{Appendices}
+	\appendix
+	\appendixtrue
+	\pagestyle{Appendix}
+	
+	%Include Appendices here
+	%\include{Appendices/MeetingNotes}
+	
+	\printbibliography[heading=bibintoc]
+	
+	\end{document}
