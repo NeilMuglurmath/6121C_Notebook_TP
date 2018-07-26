@@ -1,25 +1,91 @@
 \documentclass{article}
 
-	\usepackage{amsmath}
-	\usepackage{graphicx}
+	\usepackage{amsmath} %for equatons
+	\usepackage{graphicx} %for images
+	\usepackage{fancyhdr} %for header
+
+	\pagestyle{fancy} %add header to pages
+	\lhead{Conestoga High School Robotics} %this will be in header
 
 	\author{Team 6121C}
 	\title{The Pioneers Engineering Notebook}
-	\date{}
+	\date{} % leaves date section empty on title
 
 	%start
 	\begin{document}
 		\pagenumbering{gobble} % no show page number on title page
 		\maketitle % make default title
-		\centering VEX Turning Point (2018-19) % added info on title page
-
-		%table of contents page
+		\begin{center}
+			\centering VEX Turning Point (2018-19) % added info on title page
+		\end{center}
+		
+		% table of contents page
 		\pagenumbering{arabic} % start showing page numbers again
 		\newpage
-		\tableofcontents
+			\tableofcontents
 
-		%introduction
+		% introduction head page
 		\newpage
-		\centering PART 1 Introductory Information
+			\section{Introductory Information} % new section without number
 
+		% start introduction info
+		% preface
+		\newpage
+			\subsection{Preface}
+					\begin{flushleft}
+						\qquad This notebook is the story of
+						team 6121C throughout the VEX 2018-19 season, Turning Point.
+						It is designed to be an organized description of our design,
+						build, and programming processes.
+					\end{flushleft}	
+		
+		% use of git
+		\newpage
+			\subsection{Use of Git Version Control}
+					\begin{flushleft}
+						\qquad Our use of Git has helped us keep track of our files.
+						Everything electronic we do (code, CAD, etc.) is tracked using
+						Git version control to keep track of the iterations those files
+						have gone through.
+					\end{flushleft}
+		
+		% use of LaTeX
+		\newpage
+			\subsection{Use of \LaTeX}
+						\begin{flushleft}
+							\qquad This year, we decided to use \LaTeX\ to make
+							our notebook. This helps us have a cleaner notebook
+							and use Git version control with it as well. \LaTeX\ is
+							a typesetting system designed for technical and
+							scientific documentation. We feel that using \LaTeX\ helped us
+							be more efficient in documenting our team.
+						\end{flushleft}
+		
+		% about the team
+		\newpage
+			\subsection{About the Team}
+				\subsubsection{History of 6121C}
+					\begin{flushleft}
+						\qquad Team 6121C The Pioneers planted their seeds during
+						the VRC 2016-17 season, Starstruck. Head by veteran roboteer
+						Neil Muglurmath, they ranked 6th and earned the Tournament
+						Semifinalist award in their first regional compeition
+						of the season, qualifying them for the state qualifier. At the Eastern PA State
+						Championship, they were semifinalists in their division and won
+						the Build Award. \\
+						\qquad The team stepped up their game in the VRC 2017-18 season,
+						In The Zone. The team was comprised of one member, Neil Muglurmath,
+						for a large part of the season. In his first tournament of the season,
+						he recieved the Tournament Semifinalist award. After a rebuild, he acquired
+						both Tournament Champion and Excellence awards in his second regional compeition
+						of the season. After improving upon his second iteration, he obtained the Excellence
+						Award once again, along with being a Tournament Semifinalist. By now, 6121C had
+						qualified for the CREATE U.S. Open Robotics Championship, which consists of 200 VRC
+						teams around the country, but unfortunately there was no more space to compete. After
+						a rebuild for the Eastern PA State Championship, the team took home the Tournament
+						Champion Award, qualifying them for the VEX Robotics World Championship in
+						Louisville, Kentucky. Here, they ended with a record of 5-5 and 44th in the Research Division.
+					\end{flushleft}
+				
+				
 	\end{document}

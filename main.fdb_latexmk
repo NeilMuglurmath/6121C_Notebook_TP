@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1532531740 "/Users/neil/OneDrive - Tredyffrin Easttown School District/Robotics/Turning Point/Notebook/main.tex" "main.pdf" "main" 1532532167
-  "/Users/neil/OneDrive - Tredyffrin Easttown School District/Robotics/Turning Point/Notebook/main.tex" 1532531740 2222 668b9cbc0b0cbcd19274c260bb848bcb ""
+["pdflatex"] 1532580144 "/Users/neil/OneDrive - Tredyffrin Easttown School District/Robotics/Turning Point/Notebook/main.tex" "main.pdf" "main" 1532580144
+  "/Users/neil/OneDrive - Tredyffrin Easttown School District/Robotics/Turning Point/Notebook/main.tex" 1532580143 3574 329932d20177fa6611532dc4c2faa30b ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -58,11 +58,11 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "main.aux" 1532531741 512 8a16e98bd7e805837bf76be0c03fe8e5 ""
-  "main.tex" 1532531740 2222 668b9cbc0b0cbcd19274c260bb848bcb ""
-  "main.toc" 1532531741 395 224cf2d065f2cd9dc550f3aa8a926429 ""
+  "main.aux" 1532580144 512 8a16e98bd7e805837bf76be0c03fe8e5 ""
+  "main.tex" 1532580143 3574 329932d20177fa6611532dc4c2faa30b ""
+  "main.toc" 1532580144 395 224cf2d065f2cd9dc550f3aa8a926429 ""
   (generated)
-  "main.log"
   "main.aux"
-  "main.toc"
   "main.pdf"
+  "main.toc"
+  "main.log"
