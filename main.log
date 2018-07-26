@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 JUL 2018 22:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  26 JUL 2018 19:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -214,7 +214,7 @@ e
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [2] [3] [4] [5] [6] [7] [8] (./main.aux) ) 
+ [1] [2] [3] [4] [5] [6] [7] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  2186 strings out of 492649
  29616 string characters out of 6129622
@@ -232,7 +232,7 @@ type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsl10.pfb>
-Output written on main.pdf (8 pages, 100060 bytes).
+Output written on main.pdf (8 pages, 99803 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
