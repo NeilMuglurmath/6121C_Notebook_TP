@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Introductory Information}{3}
+\contentsline {subsection}{\numberline {1.1}Preface}{4}
+\contentsline {subsection}{\numberline {1.2}Use of Git Version Control}{5}
+\contentsline {subsection}{\numberline {1.3}Use of \LaTeX }{6}
+\contentsline {subsection}{\numberline {1.4}About the Team}{7}
+\contentsline {subsubsection}{\numberline {1.4.1}History of 6121C}{7}
