@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1532648790 "/Users/neil/OneDrive - Tredyffrin Easttown School District/Robotics/Turning Point/Notebook/main.tex" "main.pdf" "main" 1532648791
-  "/Users/neil/OneDrive - Tredyffrin Easttown School District/Robotics/Turning Point/Notebook/main.tex" 1532648789 3752 165f80b497b83666f1b4acd00c5b6353 ""
+["pdflatex"] 1532651100 "/Users/neil/OneDrive - Tredyffrin Easttown School District/Robotics/Turning Point/Notebook/main.tex" "main.pdf" "main" 1532651101
+  "/Users/neil/OneDrive - Tredyffrin Easttown School District/Robotics/Turning Point/Notebook/main.tex" 1532651099 5095 f8223ed0455fef5ed3bb804b582af6f6 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -27,6 +27,7 @@
   "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1480098733 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1480098733 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb" 1480098733 35022 e40946b20bfdcd1099eafb2bcd9f25dd ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1480098733 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1480098806 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1480098815 7612 729a8cc22a1ee0029997c7f74717ae05 ""
   "/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1480098815 7324 2310d1247db0114eb4726807c8837a0e ""
@@ -42,6 +43,7 @@
   "/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty" 1523134290 4116 32e6abd27229755a83a8b7f18e583890 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty" 1523134290 2432 8ff93b1137020e8f21930562a874ae66 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls" 1523050425 19823 fcbc01552b07b608574cbf8e1977e0c0 ""
+  "/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd" 1523050425 2472 aa08940f0a4dc6c24ae9f943b04ae0b9 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo" 1523050425 8294 b0f177401f895563eb19304d2389582d ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1498861448 10663 d7fcc0dc4f35e8998b8cfeef8407d37d ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1480098830 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -58,11 +60,11 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "main.aux" 1532648791 682 f59c27c911f5397148f13b5f414dd9ae ""
-  "main.tex" 1532648789 3752 165f80b497b83666f1b4acd00c5b6353 ""
-  "main.toc" 1532648791 529 9697b1037c3702b2cb7d512a35a304ed ""
+  "main.aux" 1532651101 772 0cbea84d5f6b38896f1d2dbdb17b3589 ""
+  "main.tex" 1532651099 5095 f8223ed0455fef5ed3bb804b582af6f6 ""
+  "main.toc" 1532651101 601 0aa558cd0453cbd8491af91f21e259c2 ""
   (generated)
-  "main.pdf"
   "main.toc"
   "main.aux"
+  "main.pdf"
   "main.log"

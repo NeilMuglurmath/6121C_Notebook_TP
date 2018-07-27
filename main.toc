@@ -5,4 +5,5 @@
 \contentsline {subsection}{\numberline {1.4}About the Team}{6}
 \contentsline {subsubsection}{\numberline {1.4.1}History of 6121C}{6}
 \contentsline {subsection}{\numberline {1.5}Team Biographies}{7}
-\contentsline {subsubsection}{\numberline {1.5.1}Neil Muglurmath}{7}
+\contentsline {subsubsection}{\numberline {1.5.1}Team Leadership}{7}
+\contentsline {subsubsection}{\numberline {1.5.2}Member Biographies}{8}
