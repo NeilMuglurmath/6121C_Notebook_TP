@@ -1,11 +1,11 @@
 \documentclass{article}
 
-	\usepackage{amsmath} %for equatons
-	\usepackage{graphicx} %for images
-	\usepackage{fancyhdr} %for header
+	\usepackage{amsmath}  % for equatons
+	\usepackage{graphicx} % for images
+	\usepackage{fancyhdr} % for header
+	\usepackage{biblatex} % for bibliography
 
-	% optionally - this creates: Figure 1.1 ... Figure 2.2
-	\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+	\addbibresource{resources.bib} %bibtex file
 
 	\pagestyle{fancy} %add header to pages
 	\lhead{Conestoga High School Robotics} %this will be in header
@@ -15,6 +15,8 @@
 	\date{} % leaves date section empty on title
 
 	\newcommand*\NewPage{\newpage\null}
+	% optionally - this creates: Figure 1.1 ... Figure 2.2
+	\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
 
 	%start
 	\begin{document}
@@ -181,29 +183,43 @@
 						\qquad Alliance Platforms can be used for Alliance Parking by Robots of the same color Alliance as the Platform. The Center Platform can be used by Robots from either Alliance for Center Parking. An additional bonus is awarded to the Alliance that has the most total points at the end of the Autonomous Period. \break
 					\end{flushleft}
 
-					% field picture
+					% competition field picture
 					\begin{figure}[h!]
 						\includegraphics[width=\linewidth]{{images/HD_Arena_White}} % schoology post
 						\caption{Competition Field setup.}
 						\label{fig:HD_Arena_White}
 					\end{figure}
 
-				% scoring
-				\subsection{Scoring}
-					\begin{center}
-						\begin{tabular}{ l | c}
-							Each Low Flag Toggled & 1 point \\ \hline
-							Each High Flag Toggled & 2 points \\ \hline
-							Each Cap Low Scored & 1 point \\ \hline
-							Each Cap High Scored & 2 points \\ \hline
-							Robot that is Alliance Parked & 3 points \\ \hline
-							Robot that is Center Parked & 6 points \\ \hline
-							Autonomous Bonus & 4 points
-						\end{tabular}
-					\end{center}
-
 			% skills rules
 			\newpage
-				\subsection{Skills Rules}
+				\subsection{Robot Skills Challenge Rules}
+					\begin{flushleft}
+						In this challenge, teams will compete in sixty (60) second long matches in an effort to score as many points as possible. These matches consist of Driving Skills Matches, which will be entirely driver controlled, and Programming Skills Matches, which will be autonomous with limited human interaction. Teams will be ranked based on their combined score in the two types of matches. The playing field will be set up similarly to that of a normal VEX Robotics Competition Turning Point match, with some modifications (see $<$RSC3$>$). \break
+
+						\textbf{$<$RSC3$>$} In a Robot Skills Match, all Flags begin the Match Toggled for the blue Alliance, and all Caps start with the blue side facing upwards. A Team’s score for their Robot Skills Match will be determined by how many points are scored for the red Alliance at the end of the Match, i.e. how many Flags are Toggled to red, how many Caps are placed “red-up”, if the Robot is Alliance Parked on the red Alliance Platform, etc.
+					\end{flushleft}
+
+					% skills field picture
+					\begin{figure}[h!]
+						\includegraphics[width=\linewidth]{{images/Skills_Field}} % schoology post
+						\caption{Competition Field setup.}
+						\label{fig:Skills_Field}
+					\end{figure}
+
+
+				% scoring
+				\newpage
+					\subsection{Scoring}
+						\begin{center}
+							\begin{tabular}{ l | c}
+								Each Low Flag Toggled & 1 point \\ \hline
+								Each High Flag Toggled & 2 points \\ \hline
+								Each Cap Low Scored & 1 point \\ \hline
+								Each Cap High Scored & 2 points \\ \hline
+								Robot that is Alliance Parked & 3 points \\ \hline
+								Robot that is Center Parked & 6 points \\ \hline
+								Autonomous Bonus & 4 points
+							\end{tabular}
+						\end{center}
 
 	\end{document}
