@@ -7,3 +7,5 @@
 \contentsline {subsection}{\numberline {1.5}Team Biographies}{7}
 \contentsline {subsubsection}{\numberline {1.5.1}Team Leadership}{7}
 \contentsline {subsubsection}{\numberline {1.5.2}Member Biographies}{8}
+\contentsline {subsection}{\numberline {1.6}Team communication}{9}
+\contentsline {subsubsection}{\numberline {1.6.1}Schoology}{9}
