@@ -41,6 +41,7 @@
 *.ind
 *.bag
 *.fdb_latexmk
+*.fls
 
 # Others #
 ######################
@@ -54,5 +55,7 @@
 *.MP4
 *.wmv
 *.WMV
+__latexindent_temp-Neil's MacBook Pro.tex
+__latexindent_temp.tex
 .git/
 auto/
