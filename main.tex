@@ -24,11 +24,13 @@
 		
 		% table of contents page
 		\newpage
-			\pagenumbering{arabic} % start showing page numbers again
+			\pagenumbering{roman} % roman numerals for page numbers in table of contents
 			\tableofcontents
 
 		% introduction head page
 		\newpage
+			\pagenumbering{arabic} % start showing arabic page numbers
+			\setcounter{page}{1} %start from page 1 for actual notebook
 			\section{Introductory Information} % new section without number
 
 		% start introduction info
@@ -63,6 +65,8 @@
 							scientific documentation. We feel that using \LaTeX\ helped us
 							be more efficient in documenting our team.
 						\end{flushleft}
+		
+		\newpage % new page in between sections
 		
 		% about the team
 		\newpage
@@ -146,6 +150,8 @@
 						\end{figure}
 					\end{flushleft}
 		
+		\newpage % new page in between sections
+
 		%game rules
 		\newpage
 			\section{Game Rules}
