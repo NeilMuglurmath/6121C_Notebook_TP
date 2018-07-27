@@ -40,6 +40,7 @@
 *.ilg
 *.ind
 *.bag
+*.fdb_latexmk
 
 # Others #
 ######################
@@ -53,7 +54,5 @@
 *.MP4
 *.wmv
 *.WMV
-*.pdf
-*.PDF
 .git/
 auto/
