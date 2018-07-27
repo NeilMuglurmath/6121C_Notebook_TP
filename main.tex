@@ -4,6 +4,9 @@
 	\usepackage{graphicx} %for images
 	\usepackage{fancyhdr} %for header
 
+	% optionally - this creates: Figure 1.1 ... Figure 2.2
+	\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+
 	\pagestyle{fancy} %add header to pages
 	\lhead{Conestoga High School Robotics} %this will be in header
 
@@ -63,8 +66,8 @@
 		
 		% about the team
 		\newpage
-			\subsection{About the Team}
-				\subsubsection{History of 6121C}
+			\section{About the Team}
+				\subsection{History of 6121C}
 					\begin{flushleft}
 						\qquad Team 6121C The Pioneers planted their seeds during
 						the VRC 2016-17 season, Starstruck. Head by veteran roboteer
@@ -142,5 +145,13 @@
 							\label{fig:Example_Post}
 						\end{figure}
 					\end{flushleft}
-				
+		
+		%game rules
+		\newpage
+			\section{Game Rules}
+				\subsection{Competition Rules}
+					\begin{flushleft}
+						
+					\end{flushleft}
+		
 	\end{document}
