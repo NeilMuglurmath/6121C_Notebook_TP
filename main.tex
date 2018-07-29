@@ -1,8 +1,10 @@
 \documentclass{article}
 
+	\usepackage[utf8]{inputenc}
 	\usepackage{amsmath}  % for equatons
 	\usepackage{graphicx} % for images
 	\usepackage{fancyhdr} % for header
+	\usepackage{float}
 
 	\pagestyle{fancy} %add header to pages
 	\lhead{Conestoga High School Robotics} %this will be in header
@@ -59,11 +61,11 @@
 		\newpage
 			\subsection{Use of \LaTeX}
 						\begin{flushleft}
-							\qquad This year, we decided to use \LaTeX\ to make
+							\qquad This year, we decided to use \LaTeX to make
 							our notebook. This helps us have a cleaner notebook
-							and use Git version control with it as well. \LaTeX\ is
+							and use Git version control with it as well. \LaTeX is
 							a typesetting system designed for technical and
-							scientific documentation. We feel that using \LaTeX\ helped us
+							scientific documentation. We feel that using \LaTeX helped us
 							be more efficient in documenting our team.
 						\end{flushleft}
 
@@ -316,20 +318,58 @@
 				\end{flushleft}
 
 		\newpage
-			\subsection{Mechanical Design Strategy}
+			\subsection{Robot Design Strategy}
+
+				\subsubsection{Control System}
+					\begin{itemize}
+
+						% cortex
+						\item Cortex
+						\begin{itemize}
+							\item The VEX Cortex control system has been tested by many teams for years. The common problems and solutions are online and it is easy to find support for the Cortex system through the VEX Forum. It is well-known by both CHS Robotics and other teams.
+
+							\item Even though the Cortex is what we are used to using, it has many negatives. The 393 motors are very weak and do not last very long. Also, 6121C's programmer uses a Mac, so programming the Cortex through Mac is very buggy. It could lead to random issues that fix themselves through a re-download of the binary, leading to confusion whether an issue is from the actual source code or not.
+						\end{itemize}
+
+						% V5
+						\item V5
+						\begin{itemize}
+							\item This is the first year that the V5 Control System is legal to use in VRC. Although CHS Robotics has no experience with it, the system seems to have many improvements over the Cortex system. It is possible to get more control over the motors and the Brain has many nice features such as ability to play practice matches without using a Competition Control Switch. Also, the motors can take much more than 393 motors. The addition of the Vision Sensor could open up many possibilities for more consistent autonomous routines.
+
+							\item Even though the V5 has these positives, it is still true that V5 has not been used in compeition yet. There could be many unadressed issues in V5. Also, being that V5 is a newly released system, there is not nearly as much information about it online than there is about the Cortes system. Also, since many teams want the V5 system, there could potentially be a backorder on V5 products.
+						\end{itemize}
+
+						\bigskip
+							\textbf{Verdict}
+							Even though CHS Robotics is used to using the tried-and-true Cortex control system, its negatives outweigh the positives. The Cortex is buggy and unreliable sometimes, and this cannot be an issue for us this year.
+					\end{itemize}
+
+			\newpage
 				\subsubsection{Drivetrains}
 					\begin{itemize}
 
 						%H-Drive
 						\item H-Drive
-						\begin{figure}[h!]
+						\begin{figure}[H]
 							\includegraphics[width=\linewidth]{{images/H_Drive}} % schoology post
 							\caption{CAD model of a widely used H-Drive drivetrain design.}
 							\label{fig:H_Drive}
-
 						\end{figure}
 						\begin{itemize}
-							\item The H-Drive drivetrain is the simplest holonomic drive. It allows both vertical and horizontal movement with the easiest build. This drivetrain consists of three modules: two on the left and right for forward and backward movement, and one at the center of gravity on the robot and perpendicular to the two sides for lateral movement.
+							\item The H-Drive drivetrain is the simplest holonomic drive. It allows both vertical and horizontal movement with the easiest build. This drivetrain consists of three modules: two on the left and right for forward and backward movement, and one at the center of gravity on the robot and perpendicular to the two sides for lateral movement. As far as programming goes, the H-Drive
+							is the easiest for autonomous movements. It can move in every direction and drives reasonably straight.
+
+							\item The H-Drive also has some negatives. It takes 6 motors; way more than other drivetrains. Also, the center module block an important area for other robot components, such as an intake. Another reason why this drive might not be the best choice is that it can have trouble getting up the platforms.
+						\end{itemize}
+					\newpage
+						\item X-Drive
+						\begin{figure}[H]
+							\includegraphics[width=\linewidth]{{images/X_Drive}} % schoology post
+							\caption{CAD model of a widely used X-Drive drivetrain design.}
+							\label{fig:X_Drive}
+						\end{figure}
+						\begin{itemize}
+							\item The X-Drive is another widely used holonomic drivetrain.
 						\end{itemize}
 					\end{itemize}
 
