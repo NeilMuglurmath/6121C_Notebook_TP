@@ -57,6 +57,8 @@
 *.WMV
 __latexindent_temp.*
 __latexindent_temp-Neil's MacBook Pro.tex
+pdflatex
+*.xml
 *.pdf
 *.PDF
 .git/
