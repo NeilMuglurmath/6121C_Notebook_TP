@@ -58,7 +58,7 @@
 __latexindent_temp.*
 __latexindent_temp-Neil's MacBook Pro.tex
 pdflatex
-*.xml
+main.run.xml
 *.pdf
 *.PDF
 .git/
