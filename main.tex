@@ -5,6 +5,13 @@
 	\usepackage{graphicx} % for images
 	\usepackage{fancyhdr} % for header
 	\usepackage{float}
+	\usepackage{titlesec}
+
+	% paragraph is in title format
+	\titleformat{\paragraph}
+	{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+	\titlespacing*{\paragraph}
+	{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 	\pagestyle{fancy} %add header to pages
 	\lhead{Conestoga High School Robotics} %this will be in header
@@ -321,54 +328,42 @@
 			\subsection{Robot Design Strategy}
 
 				\subsubsection{Control System}
-					\begin{itemize}
-
 						% cortex
-						\item Cortex
-						\begin{itemize}
-							\item The VEX Cortex control system has been tested by many teams for years. The common problems and solutions are online and it is easy to find support for the Cortex system through the VEX Forum. It is well-known by both CHS Robotics and other teams.
+						\paragraph{Cortex}
+							The VEX Cortex control system has been tested by many teams for years. The common problems and solutions are online and it is easy to find support for the Cortex system through the VEX Forum. It is well-known by both CHS Robotics and other teams.
 
-							\item Even though the Cortex is what we are used to using, it has many negatives. The 393 motors are very weak and do not last very long. Also, 6121C's programmer uses a Mac, so programming the Cortex through Mac is very buggy. It could lead to random issues that fix themselves through a re-download of the binary, leading to confusion whether an issue is from the actual source code or not.
-						\end{itemize}
+							\qquad Even though the Cortex is what we are used to using, it has many negatives. The 393 motors are very weak and do not last very long. Also, 6121C's programmer uses a Mac, so programming the Cortex through Mac is very buggy. It could lead to random issues that fix themselves through a re-download of the binary, leading to confusion whether an issue is from the actual source code or not.
 
 						% V5
-						\item V5
-						\begin{itemize}
-							\item This is the first year that the V5 Control System is legal to use in VRC. Although CHS Robotics has no experience with it, the system seems to have many improvements over the Cortex system. It is possible to get more control over the motors and the Brain has many nice features such as ability to play practice matches without using a Competition Control Switch. Also, the motors can take much more than 393 motors. The addition of the Vision Sensor could open up many possibilities for more consistent autonomous routines.
+						\paragraph{V5}
+							This is the first year that the V5 Control System is legal to use in VRC. Although CHS Robotics has no experience with it, the system seems to have many improvements over the Cortex system. It is possible to get more control over the motors and the Brain has many nice features such as ability to play practice matches without using a Competition Control Switch. Also, the motors can take much more than 393 motors. The addition of the Vision Sensor could open up many possibilities for more consistent autonomous routines.
 
-							\item Even though the V5 has these positives, it is still true that V5 has not been used in compeition yet. There could be many unadressed issues in V5. Also, being that V5 is a newly released system, there is not nearly as much information about it online than there is about the Cortex system. Also, since many teams want the V5 system, there could potentially be a backorder on V5 products. Another reason that teams might stray away from V5 is because of the 8-motor limit, as opposed to the 12-motor limit when using the Cortex system.
-						\end{itemize}
+							\qquad Even though the V5 has these positives, it is still true that V5 has not been used in compeition yet. There could be many unadressed issues in V5. Also, being that V5 is a newly released system, there is not nearly as much information about it online than there is about the Cortex system. Also, since many teams want the V5 system, there could potentially be a backorder on V5 products. Another reason that teams might stray away from V5 is because of the 8-motor limit, as opposed to the 12-motor limit when using the Cortex system.
 
 						\paragraph{Verdict: V5}
-						Even though CHS Robotics is used to using the tried-and-true Cortex control system, its negatives outweigh the positives. The Cortex is buggy and unreliable sometimes, and this cannot be an issue for us this year. We chose to use the V5 Control System for this season.
-					\end{itemize}
+							\qquad Even though CHS Robotics is used to using the tried-and-true Cortex control system, its negatives outweigh the positives. The Cortex is buggy and unreliable sometimes, and this cannot be an issue for us this year. We chose to use the V5 Control System for this season.
 
 			\newpage
 				\subsubsection{Drivetrain}
-					\begin{itemize}
+					%H-Drive
+					\paragraph{H-Drive}
+					\begin{figure}[H]
+						\includegraphics[width=\linewidth]{{images/H_Drive}}
+						\caption{CAD model of a widely used H-Drive drivetrain design.}
+						\label{fig:H_Drive}
+					\end{figure}
+						\qquad The H-Drive drivetrain is the simplest holonomic drive. It allows both vertical and horizontal movement with the easiest build. This drivetrain consists of three modules: two on the left and right for forward and backward movement, and one at the center of gravity on the robot and perpendicular to the two sides for lateral movement. As far as programming goes, the H-Drive
+						is the easiest for autonomous movements. It can move in every direction and drives reasonably straight.
 
-						%H-Drive
-						\item H-Drive
-						\begin{figure}[H]
-							\includegraphics[width=\linewidth]{{images/H_Drive}}
-							\caption{CAD model of a widely used H-Drive drivetrain design.}
-							\label{fig:H_Drive}
-						\end{figure}
-						\begin{itemize}
-							\item The H-Drive drivetrain is the simplest holonomic drive. It allows both vertical and horizontal movement with the easiest build. This drivetrain consists of three modules: two on the left and right for forward and backward movement, and one at the center of gravity on the robot and perpendicular to the two sides for lateral movement. As far as programming goes, the H-Drive
-							is the easiest for autonomous movements. It can move in every direction and drives reasonably straight.
-
-							\item The H-Drive also has some negatives. It takes 6 motors; way more than other drivetrains. Also, the center module block an important area for other robot components, such as an intake. Another reason why this drive might not be the best choice is that it can have trouble getting up the platforms.
-						\end{itemize}
+						\qquad The H-Drive also has some negatives. It takes 6 motors; way more than other drivetrains. Also, the center module block an important area for other robot components, such as an intake. Another reason why this drive might not be the best choice is that it can have trouble getting up the platforms.
 					\newpage
-						\item X-Drive
+						\paragraph{X-Drive}
 						\begin{figure}[H]
 							\includegraphics[width=\linewidth]{{images/X_Drive}}
 							\caption{CAD model of a widely used X-Drive drivetrain design.}
 							\label{fig:X_Drive}
 						\end{figure}
-						\begin{itemize}
-							\item The X-Drive is another widely used holonomic drivetrain. It consists of four modules connected 45º to the main chassis frame. As a result of the vector addition, this drivetrain can move in every direction.
+							\qquad The X-Drive is another widely used holonomic drivetrain. It consists of four modules connected 45º to the main chassis frame. As a result of the vector addition,this drivetrain can move in every direction.
 
 							\begin{figure}[H]
 								\includegraphics[width=\linewidth]{{images/X_Drive_Vector}}
@@ -376,55 +371,50 @@
 								\label{fig:X_Drive_Vector}
 							\end{figure}
 							\qquad As depicted in Figure \ref{fig:X_Drive_Vector}, the drive base moves forward because of the sum of the individual vectors created by the 4 modules. The same concept applies when the base is going backward or strafing. Unfortunately, this method of driving by vector makes the robot prone to not driving perfectly straight, because if the vectors do not add up properly, the robot will not drive straight.
-							\item The module configuration creates a $\sqrt{2}:1$ ratio for speed. As this causes the drivetrain to be faster than other styles of drivetrain with the same ratio, the drivetrain will also have less torque.
+
+							\qquad The module configuration creates a $\sqrt{2}:1$ ratio for speed. As this causes the drivetrain to be faster than other styles of drivetrain with the same ratio, the drivetrain will also have less torque.
 
 							\begin{figure}[H]
 								\includegraphics[width=\linewidth]{{images/X_Tank_Turn}}
 								\caption{Turning circle of 3 different drive styles.}
 								\label{fig:X_Tank_Turn}
 							\end{figure}
-							\item Another unique aspect of the X-Drive style is its excellent ability to execute point turns. As represented in \ref{fig:X_Tank_Turn}, the wheels on the X-Drive are tangent to the circle the four wheels form, while the wheels are not tangent to the circle on the four-wheel tank drive. The wheels not being tangent to the circle result in lots of motion of the rollers on the omni-directional wheels, which increases friction.
+							\qquad Another unique aspect of the X-Drive style is its excellent ability to execute point turns. As represented in \ref{fig:X_Tank_Turn}, the wheels on the X-Drive are tangent to the circle the four wheels form, while the wheels are not tangent to the circle on the four-wheel tank drive. The wheels not being tangent to the circle result in lots of motion of the rollers on the omni-directional wheels, which increases friction.
 
-							\item While the X-Drive seems like a solid option, it has also some negatives. Since the wheels are not straight and are instead in a 45º configuration, the robot will have a hard time going up the platforms. Also, since the 45º configuration results in a loss of torque, the robot could have issues staying at the top of the platform. Furthermore, this drive style requires 4 motors, which might not be ideal when we are limited to 8 motors.
-						\end{itemize}
+							\qquad While the X-Drive seems like a solid option, it has also some negatives. Since the wheels are not straight and are instead in a 45º configuration, the robot will have a hard time going up the platforms. Also, since the 45º configuration results in a loss of torque, the robot could have issues staying at the top of the platform. Furthermore, this drive style requires 4 motors, which might not be ideal when we are limited to 8 motors.
 
 						% tank drive
-						\item Tank Drive
-						\begin{itemize}
-							\item In VRC, the Tank Drive drivesystem is the most widely used drivetrain. It is also one of the most simple and effective drivetrains. Because of how simple it is, it can be build in different ways for different needs. Progamming is also simple for this chassis style.
-							\begin{figure}
+						\paragraph{Tank Drive}
+							\qquad In VRC, the Tank Drive drivesystem is the most widely used drivetrain. It is also one of the most simple and effective drivetrains. Because of how simple it is, it can be build in different ways for different needs. Progamming is also simple for this chassis style.
+							\begin{figure}[H]
 								\includegraphics[width=\linewidth]{{images/Tank_Drive}}
 								\caption{Turning circle of 3 different drive styles.}
 								\label{fig:Tank_Drive}
 							\end{figure}
-							\qquad As pictured in \ref{fig:Tank_Drive}, the Tank Drive drivetrain consists of two modules on either side of the robot. \ref{fig:Tank_Drive} is a 6-wheel variant. of the Tank Drive drivetrain.
+							\qquad As pictured in \ref{fig:Tank_Drive}, the Tank Drive drivetrain consists of two modules on either side of the robot. \ref{fig:Tank_Drive} is a 6-wheel variant of the Tank Drive drivetrain.
 
-							\item As good as this drivetrain is, it comes with its own problems. One is that the wheels are not tangent to the turning cirle, as portrayed in \ref{fig:X_Tank_Turn}. Also, build quality must be near perfect for the drivetrain to travel straight.
-						\end{itemize}
+							\qquad As good as this drivetrain is, it comes with its own problems. One is that the wheels are not tangent to the turning cirle, as portrayed in \ref{fig:X_Tank_Turn}. Also, build quality must be near perfect for the drivetrain to travel straight.
 
 						\paragraph{Verdict: Tank Drive}
-						After thinking through the positives and negatives of the possible drivetrains, we chose to use the Tank Drive. We felt that the simplicity and the effectiveness of this drivetrain outweighed the positives, including strafing, that the other drivetrain choices offered.
-					\end{itemize}
+							\qquad After thinking through the positives and negatives of the possible drivetrains, we chose to use the Tank Drive. We felt that the simplicity and the effectiveness of this drivetrain outweighed the positives, including strafing, that the other drivetrain choices offered.
 
 				\subsubsection{Launcher}
-				\begin{itemize}
-					\item Flywheel
-					\begin{itemize}
-						\item The flywheel was a popular launcher during the last shooting game, VRC Nothing But Net. The assembly generally consists of one or more wheels on an axle and a polycarbonate hood. They spin at very high speeds to launch balls that pass between the wheels and the hood.
+
+					\paragraph{Flywheel}
+						\qquad The flywheel was a popular launcher during the last shooting game, VRC Nothing But Net. The assembly generally consists of one or more wheels on an axle and a polycarbonate hood. They spin at very high speeds to launch balls that pass between the wheels and the hood.
 						\begin{figure}[H]
 							\includegraphics[width=\linewidth]{{images/Flywheel_Example}}
 							\caption{1104M's flywheel shooting balls.}
 							\label{fig:Flywheel_Example}
 						\end{figure}
 						\qquad In \ref{fig:Flywheel_Example}, VRC Team 1104M uses their flywheel assembly to shoot balls during the VRC 2015-16 game, Nothing But Net. Their flywheel is powered by 4 393 motors with 100 RPM internal ratios and a 25:1 external ratio for speed. They have a polycarbonate hood behind their flywheel. When the ball passes through the opening between the hood and the wheels, it gets slightly compressed. This helps the flywheel transfer more energy to the ball. The opening height is one of the specifications that a team needs to tune on a flywheel, along with gear ratio, number of wheels, spacing, and more.
+
 						\qquad The flywheel has the capability of shooting balls at many different velocities, allowing the robot to shoot any flag from anywhere on the field. Working alongside the vision sensor, which can align the robot and calculate the required velocity for the flywheel to launch the ball, the robot could consistently hit the flags as soon as it picks up the balls. Another benefit of the flywheel is that it could shoot two balls, in succession, at the high and middle flags. This way, we can quickly control the flags on the field.
 
-						\item The flywheel design is not without its negatives. One major flaw with this launcher type is the time it takes to get back up to speed after launching a ball. After launching, some of the kinetic energy of the flywheel is lost, and it takes time for the flywheel to gain this energy again. Also, in the beginning of a match, the flywheel needs to start spinning from a standstill, and that takes time as well.
-					\end{itemize}
+						\qquad The flywheel design is not without its negatives. One major flaw with this launcher type is the time it takes to get back up to speed after launching a ball. After launching, some of the kinetic energy of the flywheel is lost, and it takes time for the flywheel to gain this energy again. Also, in the beginning of a match, the flywheel needs to start spinning from a standstill, and that takes time as well.
 
-					\item Puncher/Catapult
-					\begin{itemize}
-						\item Along with the flywheel, punchers and catapults are also widely used to launch balls in VRC. They usually work by having a motor spin a slip gear, which is just a normal gear but with a portion of the teeth shaved off. The slipgear spins and pulls a mechanism back, and when the gear runs out of teeth (the shaved portion is in contact with the mechanism its pulling back), the mechanism launches, commonly with the help of potential energy stored in rubber bands.
+					\paragraph{Puncher/Catapult}
+						\qquad Along with the flywheel, punchers and catapults are also widely used to launch balls in VRC. They usually work by having a motor spin a slip gear, which is just a normal gear but with a portion of the teeth shaved off. The slipgear spins and pulls a mechanism back, and when the gear runs out of teeth (the shaved portion is in contact with the mechanism its pulling back), the mechanism launches, commonly with the help of potential energy stored in rubber bands.
 						\begin{figure}[H]
 							\includegraphics[width=\linewidth]{{images/Puncher_Example}}
 							\caption{A puncher mechanism}
@@ -432,44 +422,35 @@
 						\end{figure}
 						\qquad In \ref{fig:Puncher_Example}, a puncher mechanism is winding up. Two 393 motors are turning a slip gear, which has about a third of its teeth shaved off. When the slip gear turns and moves the rack backwards, the rubber bands store energy. When the gear runs out of teeth, the punching mechanism shoots forward, pulled by the rubber bands. When the slip gear turns enough that the teeth latch back on to the rack, the process repeats. A similar course of actions occur with a catapult mechanism.
 
-						\item Punchers are popular because of their quick windup. Unlike a flywheel, which has to accelerate to a certain velocity, a puncher only needs to wind back and release. Also, a puncher is extremely consistent; it is built for shooting a certain distance and a certain distance only.
+						\qquad Punchers are popular because of their quick windup. Unlike a flywheel, which has to accelerate to a certain velocity, a puncher only needs to wind back and release. Also, a puncher is extremely consistent; it is built for shooting a certain distance and a certain distance only.
 
-						\item One problem with punchers is that the rubber bands need to be re-tensioned once in a while. This is because after repeated use, the rubber bands get looser, which result in them not storing as much energy as it used to.
-					\end{itemize}
+						\qquad One problem with punchers is that the rubber bands need to be re-tensioned once in a while. This is because after repeated use, the rubber bands get looser, which result in them not storing as much energy as it used to.
 
 					\paragraph{Verdict: Flywheel}
-					After considering the positives and negatives of both established launcher designs, we decided on the flywheel. We felt that to have a strong robot, it needs to be able to score flags from more than one position. Also, we did not want to deal with re-tensioning our launcher.
-				\end{itemize}
+					\qquad After considering the positives and negatives of both established launcher designs, we decided on the flywheel. We felt that to have a strong robot, it needs to be able to score flags from more than one position. Also, we did not want to deal with re-tensioning our launcher.
 
 				%ball intake
 				\subsubsection{Ball intake}
-				\begin{itemize}
-					\item Top Roller and Chain
-					\begin{itemize}
-						\item The combination of a top roller and chain to intake a ball was a popular intake option during the VRC 2015-16 game, Nothing But Net. It consists of a top roller in the front of the intake which pulls balls into the second top roller. Then, the balls are pulled up to the flywheel via chain, and right before the flywheel, some teams might decide to use an accelerator, which propels the balls toward the flywheel. The accelerator is very useful because it stops balls from accidentally being fired and it can allow the driver to freely use the intake after intaking one ball. The problem with this is that it requires a motor.
+					\paragraph{Top Roller and Chain}
+						\qquad The combination of a top roller and chain to intake a ball was a popular intake option during the VRC 2015-16 game, Nothing But Net. It consists of a top roller in the front of the intake which pulls balls into the second top roller. Then, the balls are pulled up to the flywheel via chain, and right before the flywheel, some teams might decide to use an accelerator, which propels the balls toward the flywheel. The accelerator is very useful because it stops balls from accidentally being fired and it can allow the driver to freely use the intake after intaking one ball. The problem with this is that it requires a motor.
 						\begin{figure}[H]
 							\includegraphics[width=\linewidth]{{images/Roller_Chain_Example}}
 							\caption{Top roller and chain intake of VRC team 1104G during the VRC 2015-16 game, Nothing but Net.}
 							\label{fig:Roller_Chain_Example}
 						\end{figure}
-						\item \ref{fig:Roller_Chain_Example} depicts an example of the description above the image. 1104G uses two shaved gears with rubber bands in between them to pull in the balls. This is their initial roller. The ball then hits a set of sprockets covered with rubber bands for grip, which is the second roller. It is connected to chain which pulls the ball toward the accelerator. Finally, when the driver is ready to shoot, he spins the accelerator, which pushes the ball to the flywheel, where the ball exits the robot. Usually, this type of intake system is geared to be very fast to help with efficiency on the field.
-					\end{itemize}
+						\qquad \ref{fig:Roller_Chain_Example} depicts an example of the description above the image. 1104G uses two shaved gears with rubber bands in between them to pull in the balls. This is their initial roller. The ball then hits a set of sprockets covered with rubber bands for grip, which is the second roller. It is connected to chain which pulls the ball toward the accelerator. Finally, when the driver is ready to shoot, he spins the accelerator, which pushes the ball to the flywheel, where the ball exits the robot. Usually, this type of intake system is geared to be very fast to help with efficiency on the field.
 
 					\paragraph{Verdict: Top Roller and Chain}
-					The top roller and chain intake mechanism was our only established intake possibility. We felt that this intake was a solid, robust mechanism and had a very low chance of not working. Also, we liked the speed on the intake because we wanted a quick scoring robot.
-				\end{itemize}
+						\qquad The top roller and chain intake mechanism was our only established intake possibility. We felt that this intake was a solid, robust mechanism and had a very low chance of not working. Also, we liked the speed on the intake because we wanted a quick scoring robot.
 
 				\subsubsection{Cap Lift}
-				\begin{itemize}
-					\item 6-Bar
+					\paragraph{6-Bar}
 					\begin{figure}[H]
 						\includegraphics[width=\linewidth]{{images/6_Bar_Example}}
 						\caption{A simple assembly of a 6-bar.}
 						\label{fig:6_Bar_Example}
 					\end{figure}
-					\begin{itemize}
-						\item \ref{fig:6_Bar_Example} is an example of a 6-bar assembly built with VEX parts. This type of lift is commonly used in many applications in VRC. One benefit of it is that the lift is that it always stays perpendicular to the ground. This property is very helpful for drivers, taking a load off of their shoulders. It is also very easy to build, maintain, and brace, making it a viable option for a lot of teams.
+						\qquad \ref{fig:6_Bar_Example} is an example of a 6-bar assembly built with VEX parts. This type of lift is commonly used in many applications in VRC. One benefit of it is that the lift is that it always stays perpendicular to the ground. This property is very helpful for drivers, taking a load off of their shoulders. It is also very easy to build, maintain, and brace, making it a viable option for a lot of teams.
+
 						\qquad
-					\end{itemize}
-				\end{itemize}
 	\end{document}
