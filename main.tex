@@ -15,7 +15,7 @@
 
 	\pagestyle{fancy} %add header to pages
 	\lhead{Conestoga High School Robotics} %this will be in header
-	\rhead{\thesection}
+	\rhead{SECTION \thesection}
 	\author{The Pioneers}
 	\title{Team 6121C Engineering Notebook}
 	\date{} % leaves date section empty on title
@@ -430,5 +430,24 @@
 					\paragraph{Verdict: DR4B}
 						\qquad We decided upon the DR4B. What kept us away from the 6-bar was its non-linear movement. We wanted a lift that moves in only the $y$ direction, like the DR4B. The 6-bar moves in both the $x$ and $y$ directions, making its movement two-dimensional. We wanted it to be easy for the driver to score, which is not possible with a 6-bar.
 
+				\subsubsection{Cap Turner}
 
+					\begin{figure}
+						\includegraphics[width = \linewidth]{{images/3D_Plane}}
+						\caption{3D Plane to help illustrate our designs.}
+						\label{fig:3D_Plane}
+					\end{figure}
+
+					\paragraph{Turn Cap by Chain (Turning $x$ Plane)}
+						\qquad This method of turning caps seems to be the easiest to build well. It will consist of a motor on the lift turning a sprocket with chain. That chain will be attatched to a sprocket that is in front of it, which is attatched to the mechanism that holds the caps. The cap holding mechanism will be on the $x$ plane in \ref{fig:3D_Plane}. It will allow for quick and consistent 180º turns of the cap.
+
+						\qquad There are not too many problems with this design. One issue that could arise is that with this mechanism, it would be hard for the cap holder mechanism to flip downwards at the beginning of the match.
+
+					\paragraph{Turning $y$ Plane}
+						\qquad This method of turning caps is the most simple design. It is straightforward and easy to build. It is also easy to flip this mechanism down in the beginning of the match. Using this design, the mechanism would be rotating a gear on the $y$ plane in \ref{fig:3D_Plane}.
+
+						\qquad The main issue with this design is that it is flimsy. The nature of it basically forces the mechanism to be cantilevered unless we have space for a really bulky mechanism. We will have to be constantly replacing the axle the mechanism rotates on because it will keep getting bent.
+
+					\paragraph{Verdict: Turning $x$ Plane}
+						\qquad One of the goals of the team is to have a consistent, well-built robot. Unfortunately, that cannot happen with a mechanism that turns the $y$ plane, which attracted us towards turning the $x$ plane, with chain.
 	\end{document}
