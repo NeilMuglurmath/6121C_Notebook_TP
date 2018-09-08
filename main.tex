@@ -15,7 +15,7 @@
 
 	\pagestyle{fancy} %add header to pages
 	\lhead{Conestoga High School Robotics} %this will be in header
-
+	\rhead{\thesection}
 	\author{The Pioneers}
 	\title{Team 6121C Engineering Notebook}
 	\date{} % leaves date section empty on title
@@ -35,13 +35,16 @@
 		% table of contents page
 		\newpage
 			\pagenumbering{roman} % roman numerals for page numbers in table of contents
-			\tableofcontents
+			% \tableofcontents
 
 		% introduction head page
 		\newpage
 			\pagenumbering{arabic} % start showing arabic page numbers
 			\setcounter{page}{1} %start from page 1 for actual notebook
 			\section{Introductory Information} % new section without number
+			% \fancyhf{}
+			% \fancyhead[L]{\rightmark}
+			% \fancyhead[R]{\thepage}
 
 		% start introduction info
 		% preface
@@ -420,10 +423,12 @@
 						\caption{A basic double reverse four bar with an assembly on the top.}
 						\label{fig:DR4B_Example}
 					\end{figure}
-						\qquad The double reverse four bar, or DR4B, has been one of the most commonly used lifts wherever VRC games required a lift which reached high. The main benefit of the DR4B is that its path is completely linear. This will make it easy for the driver to quickly line up to the pole and score the cap. Even better, the lift can have an aligning tool to make the cap scoring process even faster. The DR4B can be built to be fast and with only motor, which is what we plan to allocate to the lift.
+						\qquad The double reverse four bar, or DR4B, has been one of the most commonly used lifts wherever VRC games required a lift which reached high. \ref{fig:DR4B_Example} is a basic example of the assembly. The main benefit of the DR4B is that its path is completely linear. This will make it easy for the driver to quickly line up to the pole and score the cap. Even better, the lift can have an aligning tool to make the cap scoring process even faster. The DR4B can be built to be fast and with only motor, which is what we plan to allocate to the lift.
 
 						\qquad As good as the DR4B sounds, it comes with its problems, with the main one being that it takes up a lot of space. With the flywheel mechanism taking up a considerable amount of space, there is not much room for a DR4B. The midsection of the DR4B does not move linearly, making that another problem to consider. Also, the build quality has to be near perfect to optimize the performance of the DR4B.
 
 					\paragraph{Verdict: DR4B}
 						\qquad We decided upon the DR4B. What kept us away from the 6-bar was its non-linear movement. We wanted a lift that moves in only the $y$ direction, like the DR4B. The 6-bar moves in both the $x$ and $y$ directions, making its movement two-dimensional. We wanted it to be easy for the driver to score, which is not possible with a 6-bar.
+
+
 	\end{document}
