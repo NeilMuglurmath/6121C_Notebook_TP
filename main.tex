@@ -146,7 +146,7 @@
 			% skills rules
 		\newpage
 			\subsection{Robot Skills Challenge Rules}
-				In this challenge, teams will compete in sixty (60) second long matches in an effort to score as many points as possible. These matches consist of Driving Skills Matches, which will be entirely driver controlled, and Programming Skills Matches, which will be autonomous with limited human interaction. Teams will be ranked based on their combined score in the two types of matches. The playing field will be set up similarly to that of a normal VEX Robotics Competition Turning Point match, with some modifications (see $<$RSC3$>$). \break
+				In this challenge, teams will compete in sixty (60) second long matches in an effort to score as many points as possible. These matches consist of Driving Skills Matches, which will be entirely driver controlled, and Programming Skills Matches, which will be autonomous with limited human interaction. Teams will be ranked based on their combined score in the two types of matches. The playing field will be set up similarly to that of a normal VEX Robotics Competition Turning Point match, with some modifications (see $<$RSC3$>$).
 
 				\textbf{$<$RSC3$>$} In a Robot Skills Match, all Flags begin the Match Toggled for the blue Alliance, and all Caps start with the blue side facing upwards. A Team’s score for their Robot Skills Match will be determined by how many points are scored for the red Alliance at the end of the Match, i.e. how many Flags are Toggled to red, how many Caps are placed “red-up”, if the Robot is Alliance Parked on the red Alliance Platform, etc.
 
@@ -201,7 +201,7 @@
 
 
 			\subsection{Season Goals for CHS Robotics}
-				\qquad During previous seasons, 6121A and B were not as highly ranked as 6121C. This year, we want to change this. We want the 6121 series to be one of the dominant VRC organizations in competitions. Multiple strong 6121 teams will be beneficial for alliance selection because since we would have worked with the other teams so much during practice, we have a good understanding of how they work. With this knowledge, we can choose other 6121 teams to be alliance partners and work cohesively for the win. \break
+				\qquad During previous seasons, 6121A and B were not as highly ranked as 6121C. This year, we want to change this. We want the 6121 series to be one of the dominant VRC organizations in competitions. Multiple strong 6121 teams will be beneficial for alliance selection because since we would have worked with the other teams so much during practice, we have a good understanding of how they work. With this knowledge, we can choose other 6121 teams to be alliance partners and work cohesively for the win.
 
 				Plan for A and B teams to succeed:
 				\begin{itemize}
@@ -215,7 +215,7 @@
 
 			\subsection{Game-Specific Strategy}
 
-				\qquad Our robot for this year must have fast and consistent scoring in all aspects of the game. To achieve this, one characteristic our robot must have is a fast drive to out-maneuver all defense, but the drive also must have enough torque to stay on the Center Platform. Also, the robot must shoot balls at flags at a faster rate than our opponents. This way, we have control of the flags. Another aspect our robot must have is that it should be able to quickly score caps on the poles and flip caps already on poles. This will minimize the time we spend on caps while giving us control of the caps on the field. All the design choices we consider for a fast robot in compeition will be helpful in Robot Skills as well. \break
+				\qquad Our robot for this year must have fast and consistent scoring in all aspects of the game. To achieve this, one characteristic our robot must have is a fast drive to out-maneuver all defense, but the drive also must have enough torque to stay on the Center Platform. Also, the robot must shoot balls at flags at a faster rate than our opponents. This way, we have control of the flags. Another aspect our robot must have is that it should be able to quickly score caps on the poles and flip caps already on poles. This will minimize the time we spend on caps while giving us control of the caps on the field. All the design choices we consider for a fast robot in compeition will be helpful in Robot Skills as well.
 
 				Specific strategies on different aspects of the game:
 				\begin{itemize}
@@ -419,9 +419,9 @@
 					\end{figure}
 
 					\paragraph{Turn Cap by Chain (Turning $x$ Plane)}
-						\qquad This method of turning caps seems to be the easiest to build well. It will consist of a motor on the lift turning a sprocket with chain. That chain will be attatched to a sprocket that is in front of it, which is attatched to the mechanism that holds the caps. The cap holding mechanism will be on the $x$ plane in \ref{fig:3D_Plane}. It will allow for quick and consistent 180º turns of the cap.
+						\qquad This method of turning caps seems to be the easiest to build well. It will consist of a motor on the lift turning a sprocket with chain. That chain will be attatched to a sprocket that is in front of it, which is attatched to the mechanism that holds the caps. The cap intake mechanism will be on the $x$ plane in \ref{fig:3D_Plane}. It will allow for quick and consistent 180º turns of the cap.
 
-						\qquad There are not too many problems with this design. One issue that could arise is that with this mechanism, it would be hard for the cap holder mechanism to flip downwards at the beginning of the match.
+						\qquad There are not too many problems with this design. One issue that could arise is that with this mechanism, it would be hard for the cap intake mechanism to flip downwards at the beginning of the match.
 
 					\paragraph{Turning $y$ Plane}
 						\qquad This method of turning caps is the most simple design. It is straightforward and easy to build. It is also easy to flip this mechanism down in the beginning of the match. Using this design, the mechanism would be rotating a gear on the $y$ plane in \ref{fig:3D_Plane}.
@@ -430,4 +430,18 @@
 
 					\paragraph{Verdict: Turning $x$ Plane}
 						\qquad One of the goals of the team is to have a consistent, well-built robot. Unfortunately, that cannot happen with a mechanism that turns the $y$ plane, which attracted us towards turning the $x$ plane, with chain.
+
+				\subsubsection{Cap Intake}
+					\paragraph{Passive}
+						\qquad Passive intakes do not use any form of power. This aspect of passive intakes is incredibly useful considering that the motor limit is 8 V5 motors. Also, a passive intake design would be a very simple and easy build, considering it is just a simple fork. It goes up to the cap and there is one fork on the bottom of the cap and another on the top.
+
+						\qquad This mechanism is not the strongest. It is flimsy as it is required to be cantilevered. This goes against our goal to have a well-built robot. Also, this mechanism is hard to incorporate with our chosen style of rotating the cap. Also, passive intakes tend to be very unreliable. We want to have a robot where reliability is not an issue.
+
+					\paragraph{Active}
+						\qquad This style of intake is similar to a claw. It can grasp the cap in one of a variety of ways, allowing for versatility in how we build and place this mechanism. This will be helpful with our choice of cap rotator. Also, it is not a very complex mechanism that takes up a lot of weight.
+
+						\qquad This intake uses a motor. With a limit of 8 motors, we have to be very careful about where we use motors. However, this is the only drawback of this mechamism.
+
+					\paragraph{Verdict: Active Intake}
+						\qquad We chose the active intake because of its reliability. We do not want to be in the middle of a match and have caps falling out of the intake. Also, we did not want to have more trouble than necessary assembling the cap turning and intake mechanisms.
 	\end{document}
